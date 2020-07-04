@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Java Script</title>
+</head>
+
+<body>
+    <script src="./Java Script_files/myscript.js.download" type="tex/javascript"></script>
+
+
+    <input type="text" id="in" value="Raj">&nbsp;<button onclick="disp();">Click</button><br>
+    <p id="out"></p>
+    <script type="">
+        function disp() {
+            document.getElementById('out').innerHTML = document.getElementById('in').value;
+        }
+    </script>
+
+
+
+
+    <button type="button" onclick="document.getElementById(&#39;demo&#39;).innerHTML=Date()">Click me to display Date &amp;
+        Time</button>
+    <p id="demo">is best institution</p>
+
+
+
+    <script type="text/javascript">
+        // document.write('abc');
+        // alert('Learn java Script From Try Catch');
+        console.log('try in mumbai');
+        console.log(document.getElementById('demo'));
+        console.log(document.getElementById('demo').innerHTML);
+        document.getElementById('demo').innerHTML = 'is best institution';
+    </script>
+
+
+    <script>
+        var a = 'try catch'
+        console.log(typeof (a));
+        console.log('a');
+    </script>
+
+    <script>
+        // string
+        var a = "My ame is 'abc'";
+        console.log(a);
+
+        var mystr = "My \"name\" is \'abc'";
+        alert(mystr);
+
+        //number
+        var x = 5;
+        console.log(typeof (x));
+
+        var a = "Hello"
+        var b = "World"
+        console.log(a + '  ' + b);
+        console.log(a[0]);
+
+        var x = 5;
+        var y = 6;
+        console.log(x + y);
+
+        /*operators*/
+        //assignment operators
+		/*
+		=
+		+=
+		-=
+		/=
+		*/
+
+		/*
+		artithmetic operators
+			+
+			_
+			*
+			/
+			%
+			*/
+
+        //var d = document.getElementById('demo').innerHTML;
+        document.getElementById('demo').innerHTML += 'abc';
+
+        var x = 'xyz'
+        var y = 'abc'
+        x = x + y;
+        x += y;
+
+
+        console.log(12 / 5);
+        console.log(12 % 5);
+
+        /*boolean*/
+
+        var x = true;
+        console.log(typeof (x));
+
+        /*Array*/
+
+        var arr = [
+            1,
+            2,
+            3,
+            4,
+            5,
+            [7, 8, 9]
+        ];
+        console.log(arr);
+        console.log(arr[3]);
+        console.log(arr[5][1]);
+
+        /*object*/
+
+        var obj = { name: 'abc', contact: '234567854', subject: 'JS', data: [1, 2, 3] };
+        console.log(obj);
+        console.log(obj.name);
+    </script> --&gt;
+
+
+
+    <!-- task print the nummbers and strings -->
+    <script>
+        var arr2 = [1, 2, 3, 4, [5, 6, 7, [9, 10, { name: 'abc', contact: '2321234', subject: 'JS' }, 11], 12], 8, 13];
+
+        console.log(arr2[3][5]);
+        // console.log(arr2[2]);
+
+
+
+
+        //again a task given
+
+        var xyz = { data: [{ name: 'student1', email: 'student1@mail.com' }, { name: 'student2', email: 'student2@mail.com' }, { name: 'student3', email: 'student3@mail.com' }] };
+
+        //  task print all below String in browser console
+
+        // student1-student1@mail.com
+        // student2-student2@mail.com
+        // student3-student3@mail.com
+
+        console.log(xyz.data[0].name + '-' + xyz.data[0].email);
+        console.log(xyz.data[1].name + '-' + xyz.data[1].email);
+        console.log(xyz.data[2].name + '-' + xyz.data[2].email);
+
+
+
+
+
+
+        function abc(a, b) {
+            //alert(a+b);
+            return a + b;
+            alert(1);
+        }
+        var a = abc(5, 6);
+        console.log(a);
+
+        // conditional statemets
+        // if...else
+        var x = 11;
+        console.log(x == 5);
+        if (x == 5)
+        { console.log('x is equal to 5'); }
+        else if(x > 5 || x < 10)
+        {console.log('x is greater than 5');}
+        else{
+            console.log('x is not equal to 5');
+        }
+
+
+        //switch case
+
+        var day = 'fridsfsfday';
+        switch(day){
+            case 'sunday':
+            console.log('today is sunday');
+            break;
+            case 'monday':
+            console.log('today is monday');
+            break;
+            case 'tuesday':
+            console.log('today is tuesday');
+            break;
+            case 'wednesday':
+            console.log('today is wednesday');
+            break;
+            case 'thursday':
+            console.log('today is thursday');
+            break;
+            case 'friday':
+            console.log('today is friday');
+            break;
+            case 'saturday':
+            console.log('today is saturday');
+            break;
+            default:
+            console.log('default');
+            
+        }
+
+
+
+
+
+
+    </script>
+
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
